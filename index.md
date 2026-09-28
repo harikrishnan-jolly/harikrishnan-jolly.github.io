@@ -1,6 +1,6 @@
-   ## About me
+## About
 
-   I help transform complex, high-stakes information to clear and concise documentation that people can actually act on — SOPs, regulatory reporting write-ups, API reference guides and process documentation, refined over 6+ years working in FinTech at State Street. I have overall 14+ years of professional experiences at Top Financial Banking services.
+I turn complex, high-stakes information into clear documentation that people can act on: SOPs, regulatory reporting write-ups, process documentation and API documentation. I've spent 6+ years documenting FinTech and GRC products at State Street India (Previously, State Street HCL Services) at Coimbatore, after 8+ years in financial services operations at Bank of America and Wipro at Hyderabad.
 
  
 My background gives me something most technical writers don't have: I've worked inside the regulated, high-precision environments I'd be documenting — where a process note or SOP has to be accurate the first time, because compliance and audit teams depend on it. I bring that same discipline to structured content, paired with skillset on DITA/XML, MadCap Flare, Markdown, and AI-assisted content workflows (Claude, ChatGPT, Copilot).
