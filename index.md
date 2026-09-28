@@ -1,6 +1,15 @@
-   ## About
+   ## About me
 
-   Technical writer with a 14+ year background in Investment Banking and Risk operations. I turn complex, regulated processes into clear SOPs, user guides and process documentation.
+   I help transform complex, high-stakes information to clear and concise documentation that people can actually act on — SOPs, regulatory reporting write-ups, API reference guides and process documentation, refined over 6+ years working in FinTech at State Street. I have overall 14+ years of professional experiences at Top Financial Banking services.
+
+ 
+My background gives me something most technical writers don't have: I've worked inside the regulated, high-precision environments I'd be documenting — where a process note or SOP has to be accurate the first time, because compliance and audit teams depend on it. I bring that same discipline to structured content, paired with skillset on DITA/XML, MadCap Flare, Markdown, and AI-assisted content workflows (Claude, ChatGPT, Copilot).
+
+ 
+I'm also a Certified ScrumMaster (CSM), so I understand Agile delivery from the inside — how documentation needs to move at the pace of a sprint, not slow it down.
+
+
+If you're looking for a technical writer who can walk into a complex, compliance-heavy, or cross-functional environment and be productive fast, let's connect.
 
    ## What I write
    - Standard Operating Procedures (Confluence, SharePoint)
@@ -14,23 +23,17 @@
    - User Manuals
    - Release Notes
 
-   ## Core Skills & Expertise
+   ## Writing samples
+- [SOP: Market Risk Limit Breach Escalation](samples/limit-breach-escalation-sop.html), a regulated-process SOP for a fictional bank
 
-   **Content Strategy**
-   Information Architecture · Single-Sourcing · Structured & Topic-Based Authoring · Reusability · Style Guide Development
+## Core skills & expertise
+- **Documentation:** Installation Guides · Knowledge Base · API Reference · Developer Docs · UX Writing · In-App Help · User Manuals · Release Notes
+- **Content strategy:** Information Architecture · Single-Sourcing · Structured & Topic-Based Authoring · Reusability · Style Guide Development
+- **Tools & platforms:** DITA / XML · Adobe RoboHelp · MadCap Flare · JIRA · Confluence · GitHub · Markdown · Postman · JSON
+- **Methodologies & AI:** Agile · Scrum · SDLC · DDLC · Generative AI Frameworks · Prompt Engineering · Claude · ChatGPT
 
-   **Tools & Platforms**
-   DITA / XML · Adobe RoboHelp · MadCap Flare · JIRA · Confluence · GitHub · Markdown · Postman · JSON
-
-   **Methodologies & AI**
-   Agile · Scrum · SDLC · DDLC · Generative AI Frameworks · Prompt Engineering · Claude · ChatGPT
-
-   ## Credentials
-   Certified Scrum Master (CSM) · Lean Six Sigma Yellow Belt · Technical Writing from Information Developers Foundation.
+## Credentials
+Certified Scrum Master (CSM) · Lean Six Sigma Yellow Belt · Global Markets Certification . Technical Writing - Information Developers Foundation
 
    ## Contact
    [LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [GitHub](https://github.com/harikrishnan-jolly) · [Email](harikrishnan.jolly@gmail.com)
-
-
-      ## Writing samples
-   - [SOP: Market Risk Limit Breach Escalation](samples/limit-breach-escalation-sop.html), a regulated-process SOP for a fictional bank
