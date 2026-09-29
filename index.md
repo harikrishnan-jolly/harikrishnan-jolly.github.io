@@ -26,7 +26,7 @@ If you're looking for a technical writer who can walk into a complex, compliance
    - User Manuals
    - Release Notes
 
-   ## Writing samples
+## Writing samples
 - [SOP: Market Risk Limit Breach Escalation](samples/limit-breach-escalation-sop.html), a regulated-process SOP for a fictional bank
 - [How I Start a Document from Scratch: The POWER Framework](samples/documentation-development-lifecycle.html), my own methodology for approaching a new documentation project
 - [The Future Impact of AI on Technical Documentation](samples/ai-impact-on-technical-documentation.html), an opinion piece on AI's effect on the writer's role
@@ -40,5 +40,5 @@ If you're looking for a technical writer who can walk into a complex, compliance
 ## Credentials
 Certified Scrum Master (CSM) · Lean Six Sigma Yellow Belt · Global Markets Certification . Technical Writing - Information Developers Foundation
 
-   ## Contact
-   [LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [GitHub](https://github.com/harikrishnan-jolly) · [Email](harikrishnan.jolly@gmail.com)
+## Contact
+[LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [GitHub](https://github.com/harikrishnan-jolly) · [Email](harikrishnan.jolly@gmail.com)
