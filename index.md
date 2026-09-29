@@ -41,4 +41,4 @@ If you're looking for a technical writer who can walk into a complex, compliance
 Certified Scrum Master (CSM) · Lean Six Sigma Yellow Belt · Global Markets Certification . Technical Writing - Information Developers Foundation
 
 ## Contact
-[LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [GitHub](https://github.com/harikrishnan-jolly) · [Email](harikrishnan.jolly@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [Email](harikrishnan.jolly@gmail.com)
