@@ -1,7 +1,6 @@
 ---
 title: J Hari Krishnan
 ---
-   
 ## About
 
 I turn complex, high-stakes information into clear documentation that people can act on: SOPs, regulatory reporting write-ups, process documentation and API documentation. I've spent 6+ years documenting FinTech and GRC products at State Street India (Previously, State Street HCL Services) at Coimbatore, after 8+ years in financial services operations at Bank of America and Wipro at Hyderabad.
@@ -15,7 +14,7 @@ I'm also a Certified ScrumMaster (CSM), so I understand Agile delivery from the 
 
 If you're looking for a technical writer who can walk into a complex, compliance-heavy, or cross-functional environment and be productive fast, let's connect.
 
-   ## What I write
+## What I write
    - Standard Operating Procedures (Confluence, SharePoint)
    - Regulatory reporting documentation
    - Process guides and user guides
@@ -29,6 +28,8 @@ If you're looking for a technical writer who can walk into a complex, compliance
 
    ## Writing samples
 - [SOP: Market Risk Limit Breach Escalation](samples/limit-breach-escalation-sop.html), a regulated-process SOP for a fictional bank
+- [How I Start a Document from Scratch: The POWER Framework](samples/documentation-development-lifecycle.html), my own methodology for approaching a new documentation project
+- [The Future Impact of AI on Technical Documentation](samples/ai-impact-on-technical-documentation.html), an opinion piece on AI's effect on the writer's role
 
 ## Core skills & expertise
 - **Documentation:** Installation Guides · Knowledge Base · API Reference · Developer Docs · UX Writing · In-App Help · User Manuals · Release Notes
