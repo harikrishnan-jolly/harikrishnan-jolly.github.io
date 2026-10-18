@@ -102,7 +102,7 @@ components:
   schemas:
     Error:
       type: object
-      description: Returned with every 4xx and 5xx response.
+      description: Returned with the 400 and 503 responses.
       required:
         - error
         - reason
