@@ -1,0 +1,205 @@
+openapi: 3.0.3
+info:
+  title: Open-Meteo Forecast API (sample documentation)
+  version: 1.1.0
+  description: |
+    Independent portfolio sample documenting the public Open-Meteo Forecast API.
+    It is not official Open-Meteo documentation. For the official reference, see open-meteo.com.
+
+    The API is free for non-commercial use and needs no API key. This reference covers
+    `current` and `daily` requests, the `timezone` parameter, and the error responses
+    tested against the live API on 11 October 2026.
+servers:
+  - url: https://api.open-meteo.com/v1
+tags:
+  - name: Forecast
+    description: Weather forecast and current conditions for a location.
+paths:
+  /forecast:
+    get:
+      tags:
+        - Forecast
+      operationId: getForecast
+      summary: Get a weather forecast
+      description: |
+        Returns current conditions, a daily forecast, or both for a location.
+        Send `latitude` and `longitude`, then name the variables you want in `current`, `daily`, or both.
+      parameters:
+        - name: latitude
+          in: query
+          required: true
+          description: Latitude of the location, in degrees. Must be between -90 and 90.
+          schema:
+            type: number
+            minimum: -90
+            maximum: 90
+          example: 11.0168
+        - name: longitude
+          in: query
+          required: true
+          description: Longitude of the location, in degrees.
+          schema:
+            type: number
+          example: 76.9558
+        - name: current
+          in: query
+          description: Comma-separated list of weather variables to return as current conditions.
+          schema:
+            type: string
+          example: temperature_2m,wind_speed_10m
+        - name: daily
+          in: query
+          description: Comma-separated list of daily summary variables. Hourly names such as temperature_2m are rejected with a 400 error. Use the aggregated form, for example temperature_2m_max.
+          schema:
+            type: string
+          example: temperature_2m_max,temperature_2m_min
+        - name: timezone
+          in: query
+          description: Timezone for the response, for example Asia/Kolkata. When omitted, the response uses GMT. Setting it changes the timestamps and can change daily values. In testing, a daily request without this parameter returned a 200 response in GMT.
+          schema:
+            type: string
+          example: Asia/Kolkata
+      responses:
+        '200':
+          description: Successful response. Contains location details, plus a current block, a daily block, or both, depending on the parameters sent.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ForecastResponse'
+        '400':
+          description: The request was invalid, for example a missing parameter, an out-of-range value or an unknown variable name.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                latitudeOutOfRange:
+                  summary: Latitude outside -90 to 90
+                  value:
+                    error: true
+                    reason: "Latitude must be in range of -90 to 90°. Given: 999.0."
+                coordinateMissing:
+                  summary: latitude or longitude omitted
+                  description: The same message is returned whichever of the two is missing, so it does not say which one to add.
+                  value:
+                    error: true
+                    reason: "Parameter 'latitude' and 'longitude' must have the same number of elements"
+                invalidDailyVariable:
+                  summary: Unknown variable in the daily parameter
+                  value:
+                    error: true
+                    reason: "Invalid value: Cannot initialize ForecastVariableDaily from invalid String value temperature_2m"
+        '503':
+          description: The service is temporarily overloaded. Retry the request after a short wait.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              example:
+                error: true
+                reason: The service is overloaded
+components:
+  schemas:
+    Error:
+      type: object
+      description: Returned with every 4xx and 5xx response.
+      required:
+        - error
+        - reason
+      properties:
+        error:
+          type: boolean
+          description: Always true for an error response.
+          example: true
+        reason:
+          type: string
+          description: Message describing what went wrong.
+          example: "Latitude must be in range of -90 to 90°. Given: 999.0."
+    ForecastResponse:
+      type: object
+      properties:
+        latitude:
+          type: number
+          description: Latitude of the grid point the data comes from. May differ slightly from the value you sent.
+          example: 11.001758
+        longitude:
+          type: number
+          description: Longitude of the grid point the data comes from. May differ slightly from the value you sent.
+          example: 76.99468
+        generationtime_ms:
+          type: number
+          description: Time the server took to generate the forecast, in milliseconds.
+          example: 0.046
+        elevation:
+          type: number
+          description: Elevation of the weather grid cell used for the forecast, in metres.
+          example: 431
+        utc_offset_seconds:
+          type: integer
+          description: Offset of the response timezone from UTC, in seconds.
+          example: 19800
+        timezone:
+          type: string
+          description: Timezone used for all timestamps. GMT when the timezone parameter is omitted.
+          example: Asia/Kolkata
+        timezone_abbreviation:
+          type: string
+          description: Short form of the timezone, shown as an offset, for example GMT+5:30.
+          example: "GMT+5:30"
+        current_units:
+          type: object
+          description: Unit of each field in the current block.
+          example:
+            time: iso8601
+            interval: seconds
+            temperature_2m: "°C"
+            wind_speed_10m: km/h
+        current:
+          type: object
+          description: Current conditions. Present when the current parameter is sent.
+          properties:
+            time:
+              type: string
+              description: Timestamp of the reading in ISO 8601 format, in the response timezone.
+              example: "2026-10-10T21:15"
+            interval:
+              type: integer
+              description: Length of the data interval, in seconds.
+              example: 900
+            temperature_2m:
+              type: number
+              description: Air temperature. The unit is given in current_units.
+              example: 25.1
+            wind_speed_10m:
+              type: number
+              description: Wind speed. The unit is given in current_units.
+              example: 2.8
+        daily_units:
+          type: object
+          description: Unit of each field in the daily block.
+          example:
+            time: iso8601
+            temperature_2m_max: "°C"
+            temperature_2m_min: "°C"
+        daily:
+          type: object
+          description: Daily summaries. Present when the daily parameter is sent. Each variable is an array in the same order as time, so item N in every array belongs to date N.
+          properties:
+            time:
+              type: array
+              description: Calendar dates in the response timezone, in YYYY-MM-DD format.
+              items:
+                type: string
+              example: ["2026-10-10", "2026-10-11", "2026-10-12"]
+            temperature_2m_max:
+              type: array
+              description: Highest air temperature for each date.
+              items:
+                type: number
+              example: [31.6, 31.9, 32.3]
+            temperature_2m_min:
+              type: array
+              description: Lowest air temperature for each date.
+              items:
+                type: number
+              example: [22.2, 23.6, 21.9]
