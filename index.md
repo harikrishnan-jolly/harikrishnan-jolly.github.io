@@ -1,5 +1,16 @@
 ---
+layout: default
 title: J Hari Krishnan
+---
+
+<div style="display: flex; align-items: center; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #eaecef; margin-bottom: 30px;">
+  <img src="HariKrishnan.jpg" alt="J Hari Krishnan" width="130" height="130" style="border-radius: 50%; object-fit: cover; border: 3px solid #eaecef; flex-shrink: 0;">
+  <div style="display: flex; flex-direction: column; justify-content: center;">
+    <h1 style="margin: 0 0 8px 0; font-size: 2.5rem; line-height: 1.2; font-weight: 700; color: #24292e;">J Hari Krishnan</h1>
+    <p style="margin: 0; font-size: 1.15rem; line-height: 1.4; color: #586069; font-weight: 500;">Technical Writer | Information Architecture | AI-Assisted Documentation | FinTech</p>
+  </div>
+</div>
+
 ---
 ## About
 
