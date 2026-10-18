@@ -4,31 +4,31 @@ title: J Hari Krishnan
 ---
 
 <style>
-  /* Forces the banner image scaling and resolution fit by clearing the theme gradient */
+  /* Hides the default Cayman theme green gradient block entirely */
   .page-header {
-    background-image: url('Images/TW%20images.jpg') !important; 
-    background-size: contain !important;       /* Fits the entire graphic within the box */
-    background-repeat: no-repeat !important;   /* Prevents the image from duplicating */
-    background-position: center !important;    /* Centers the image perfectly */
-    background-color: #0b0c10 !important;      /* Matches the dark background color of your graphic */
-    padding: 8rem 2rem !important;             /* Adjusts the banner height to see the whole image */
-  }
-  
-  /* Suppresses the Cayman theme's automatic text duplication in the header zone */
-  .page-header .project-name, 
-  .page-header .project-tagline, 
-  .page-header .btn {
     display: none !important;
+  }
+  /* Cleans up any theme borders on this specific documentation header layout table */
+  .doc-header-table, .doc-header-table tr, .doc-header-table td {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
   }
 </style>
 
-<div style="display: flex; align-items: center; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #eaecef; margin-bottom: 30px; margin-top: 20px;">
-  <img src="Images/HariKrishnan.jpg" alt="J Hari Krishnan" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 3px solid #eaecef; flex-shrink: 0;">
-  <div style="display: flex; flex-direction: column; justify-content: center;">
-    <h1 style="margin: 0 0 8px 0; font-size: 2.3rem; line-height: 1.2; font-weight: 700; color: #24292e;">J Hari Krishnan</h1>
-    <p style="margin: 0; font-size: 1.15rem; line-height: 1.4; color: #586069; font-weight: 500;">Technical Writer | Information Architecture | AI-Assisted Documentation | FinTech</p>
-  </div>
-</div>
+<table class="doc-header-table" style="width: 100%; margin-bottom: 40px; margin-top: 30px; border-spacing: 0; border-collapse: collapse;">
+  <tr>
+    <td style="width: 120px; vertical-align: middle; padding-right: 24px !important;">
+      <img src="Images/HariKrishnan.jpg" alt="J Hari Krishnan" width="110" height="110" style="border-radius: 8px; object-fit: cover; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+    </td>
+    <td style="vertical-align: middle;">
+      <h1 style="margin: 0 0 6px 0; font-size: 2.4rem; font-weight: 800; color: #0f172a; letter-spacing: -0.02em; border-bottom: none; padding-bottom: 0;">J Hari Krishnan</h1>
+      <div style="font-size: 0.95rem; color: #0f172a; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; background: #f1f5f9; padding: 6px 12px; border-radius: 6px; border: 1px solid #e2e8f0; display: inline-block;">
+        <span style="color: #0284c7;">Role:</span> Technical_Writer // <span style="color: #0284c7;">Domain:</span> FinTech_GRC
+      </div>
+    </td>
+  </tr>
+</table>
 
 ---
 ## About
