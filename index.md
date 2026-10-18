@@ -4,12 +4,14 @@ title: J Hari Krishnan
 ---
 
 <style>
-  /* Swaps the theme's green gradient for your custom banner path */
+  /* Fixes the banner image scaling and resolution fit */
   .page-header {
     background-image: url('Images/TW%20images.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 6rem 2rem !important;
+    background-size: contain;      /* Fits the entire graphic within the box */
+    background-repeat: no-repeat;  /* Prevents the image from duplicating */
+    background-position: center;   /* Centers the image perfectly */
+    background-color: #0b0c10;     /* Matches the dark background color of your graphic */
+    padding: 8rem 2rem !important; /* Adjusts the banner height to see the whole image */
   }
   
   /* Suppresses the Cayman theme's automatic text duplication in the header zone */
