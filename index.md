@@ -3,10 +3,27 @@ layout: default
 title: J Hari Krishnan
 ---
 
-<div style="display: flex; align-items: center; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #eaecef; margin-bottom: 30px;">
-  <img src="HariKrishnan.jpg" alt="J Hari Krishnan" width="130" height="130" style="border-radius: 50%; object-fit: cover; border: 3px solid #eaecef; flex-shrink: 0;">
+<style>
+  /* Swaps the theme's green gradient for your custom banner path */
+  .page-header {
+    background-image: url('Images/TW%20images.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 2rem !important;
+  }
+  
+  /* Suppresses the Cayman theme's automatic text duplication in the header zone */
+  .page-header .project-name, 
+  .page-header .project-tagline, 
+  .page-header .btn {
+    display: none !important;
+  }
+</style>
+
+<div style="display: flex; align-items: center; gap: 24px; padding-bottom: 20px; border-bottom: 1px solid #eaecef; margin-bottom: 30px; margin-top: 20px;">
+  <img src="Images/HariKrishnan.jpg" alt="J Hari Krishnan" width="120" height="120" style="border-radius: 50%; object-fit: cover; border: 3px solid #eaecef; flex-shrink: 0;">
   <div style="display: flex; flex-direction: column; justify-content: center;">
-    <h1 style="margin: 0 0 8px 0; font-size: 2.5rem; line-height: 1.2; font-weight: 700; color: #24292e;">J Hari Krishnan</h1>
+    <h1 style="margin: 0 0 8px 0; font-size: 2.3rem; line-height: 1.2; font-weight: 700; color: #24292e;">J Hari Krishnan</h1>
     <p style="margin: 0; font-size: 1.15rem; line-height: 1.4; color: #586069; font-weight: 500;">Technical Writer | Information Architecture | AI-Assisted Documentation | FinTech</p>
   </div>
 </div>
