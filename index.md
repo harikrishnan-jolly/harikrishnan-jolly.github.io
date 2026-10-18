@@ -30,6 +30,7 @@ If you're looking for a technical writer who can walk into a complex, compliance
 - [SOP: Market Risk Limit Breach Escalation](samples/limit-breach-escalation-sop.html), a regulated-process SOP for a fictional bank
 - [How I Start a Document from Scratch: The POWER Framework](samples/documentation-development-lifecycle.html), my own methodology for approaching a new documentation project
 - [The Future Impact of AI on Technical Documentation](samples/ai-impact-on-technical-documentation.html), an opinion piece on AI's effect on the writer's role
+- [API Reference: Open-Meteo Forecast API](https://harikrishnan-jolly.github.io/samples/open-meteo-api/reference.html), an OpenAPI reference tested against the live API, with a [Quickstart](https://harikrishnan-jolly.github.io/samples/open-meteo-api/quickstart.html) and verified code samples
 
 ## Core skills & expertise
 - **Documentation:** Installation Guides · Knowledge Base · API Reference · Developer Docs · UX Writing · In-App Help · User Manuals · Release Notes
@@ -41,4 +42,4 @@ If you're looking for a technical writer who can walk into a complex, compliance
 Certified Scrum Master (CSM) · Lean Six Sigma Yellow Belt · Global Markets Certification . Technical Writing - Information Developers Foundation
 
 ## Contact
-[LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [Email: ](https://google.com)harikrishnan.jolly@gmail.com
+[LinkedIn](https://www.linkedin.com/in/harikrishnan-jolly/) · [Email](mailto:harikrishnan.jolly@gmail.com)
