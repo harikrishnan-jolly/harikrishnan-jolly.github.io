@@ -4,14 +4,14 @@ title: J Hari Krishnan
 ---
 
 <style>
-  /* Fixes the banner image scaling and resolution fit */
+  /* Forces the banner image scaling and resolution fit by clearing the theme gradient */
   .page-header {
-    background-image: url('Images/TW%20images.jpg'); 
-    background-size: contain;      /* Fits the entire graphic within the box */
-    background-repeat: no-repeat;  /* Prevents the image from duplicating */
-    background-position: center;   /* Centers the image perfectly */
-    background-color: #0b0c10;     /* Matches the dark background color of your graphic */
-    padding: 8rem 2rem !important; /* Adjusts the banner height to see the whole image */
+    background-image: url('Images/TW%20images.jpg') !important; 
+    background-size: contain !important;       /* Fits the entire graphic within the box */
+    background-repeat: no-repeat !important;   /* Prevents the image from duplicating */
+    background-position: center !important;    /* Centers the image perfectly */
+    background-color: #0b0c10 !important;      /* Matches the dark background color of your graphic */
+    padding: 8rem 2rem !important;             /* Adjusts the banner height to see the whole image */
   }
   
   /* Suppresses the Cayman theme's automatic text duplication in the header zone */
