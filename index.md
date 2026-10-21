@@ -33,7 +33,7 @@ title: J Hari Krishnan
 ---
 ## About
 
-I turn complex, high-stakes information into clear documentation that people can act on: SOPs, regulatory reporting write-ups, process documentation and API documentation. I've spent 6+ years documenting FinTech and GRC products at State Street India (Previously, State Street HCL Services) at Coimbatore, after 8+ years in financial services operations at Bank of America and Wipro at Hyderabad.
+I turn complex, high-stakes information into clear documentation that people can act on: SOPs, regulatory reporting write-ups, process documentation and API documentation. I've spent 6+ years documenting FinTech and GRC products at State Street India (Previously, State Street HCL Services) in Coimbatore, after 3+ years in financial services operations at Bank of America,Hyderabad.
 
  
 My background gives me something most technical writers don't have: I've worked inside the regulated, high-precision environments I'd be documenting — where a process note or SOP has to be accurate the first time, because compliance and audit teams depend on it. I bring that same discipline to structured content, paired with skillset on DITA/XML, MadCap Flare, Markdown, and AI-assisted content workflows (Claude, ChatGPT, Copilot).
