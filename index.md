@@ -24,7 +24,7 @@ title: J Hari Krishnan
     <td style="vertical-align: middle;">
       <h1 style="margin: 0 0 6px 0; font-size: 2.4rem; font-weight: 800; color: #0f172a; letter-spacing: -0.02em; border-bottom: none; padding-bottom: 0;">J Hari Krishnan</h1>
       <div style="font-size: 0.95rem; color: #0f172a; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; background: #f1f5f9; padding: 6px 12px; border-radius: 6px; border: 1px solid #e2e8f0; display: inline-block;">
-        <span style="color: #0284c7;">Role:</span> Technical_Writer // <span style="color: #0284c7;">Domain:</span> FinTech_GRC
+        <span style="color: #0284c7;">Role:</span> Technical_Writer // <span style="color: #0284c7;">Domain:</span> FinTech
       </div>
     </td>
   </tr>
